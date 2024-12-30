@@ -1,0 +1,81 @@
+<p-card header="Register">
+  <form
+    name="register-form"
+    autoComplete="off"
+    [formGroup]="registerForm"
+    (ngSubmit)="handleSubmit()"
+  >
+    <div class="flex-container">
+      <div class="input-container">
+        <label for="email">Email</label>
+        <input
+          type="text"
+          id="email"
+          pInputText
+          formControlName="email"
+          [pAutoFocus]="true"
+          placeholder="Email"
+          class="input-field"
+          [ngClass]="{ 'ng-invalid': email.invalid, 'ng-dirty': email.dirty || email.touched }"
+        />
+
+        @if(email.invalid && email.dirty || email.touched) { @if( email.errors?.['required'] ) {
+        <span class="validation-message">Email is required</span>
+        } @else if (email.errors?.['email']) {
+        <span class="validation-message">Email should be valid</span>
+        } }
+      </div>
+
+      <div class="input-container">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          pInputText
+          formControlName="password"
+          placeholder="Password"
+          class="input-field"
+          [ngClass]="{ 'ng-invalid': email.invalid, 'ng-dirty': email.dirty || email.touched }"
+        />
+
+        @if(password.invalid && password.dirty || password.touched) { @if(
+        password.errors?.['required'] ) {
+        <span class="validation-message">Password is required</span>
+        } @else if (password.errors?.['password']) {
+        <span class="validation-message">Password should be valid</span>
+        } }
+      </div>
+
+      <div class="input-container">
+        <label for="passwordConfirm">Confirm Password</label>
+        <input
+          type="password"
+          id="passwordConfirm"
+          pInputText
+          formControlName="passwordConfirm"
+          placeholder="Confirm Password"
+          class="input-field"
+          [ngClass]="{ 'ng-invalid': email.invalid, 'ng-dirty': email.dirty || email.touched }"
+        />
+
+        @if(passwordConfirm.invalid && passwordConfirm.dirty || passwordConfirm.touched) { @if(
+        passwordConfirm.errors?.['required'] ) {
+        <span class="validation-message">Password confirm is required</span>
+        } @else if (registerForm.errors?.['mismatch']) {
+        <span class="validation-message">Passwords must match</span>
+        } }
+      </div>
+
+      <p-button type="submit" [disabled]="!registerForm.valid">
+        <p>Register</p>
+      </p-button>
+    </div>
+
+    <div class="flex-container">
+      <p class="login-link" class="login-redirect">
+        Already have an account?
+        <p-button label="Login" [link]="true" (onClick)="handleToLogin()" />
+      </p>
+    </div>
+  </form>
+</p-card>

@@ -1,0 +1,31 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.input-container {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  height: 50px;
+  width: 300px;
+}
+
+.validation-message {
+  position: absolute;
+  right: 0;
+  bottom: -20px;
+
+  color: red;
+}
+
+.login-redirect {
+  margin-top: 30px;
+  font-size: small;
+}

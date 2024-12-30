@@ -1,0 +1,54 @@
+<p-card header="Login">
+  <form name="login-form" autoComplete="off" [formGroup]="loginForm" (ngSubmit)="handleSubmit()">
+    <div class="flex-container">
+      <div class="input-container">
+        <label for="email">Login</label>
+        <input
+          type="text"
+          id="email"
+          pInputText
+          formControlName="email"
+          [pAutoFocus]="true"
+          class="input-field"
+          [ngClass]="{ 'ng-invalid': email.invalid, 'ng-dirty': email.dirty || email.touched }"
+        />
+
+        @if(email.invalid && email.dirty || email.touched) { @if( email.errors?.['required'] ) {
+        <span class="validation-message">Email is required</span>
+        } @else if (email.errors?.['email']) {
+        <span class="validation-message">Email should be valid</span>
+        } }
+      </div>
+
+      <div class="input-container">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          pInputText
+          formControlName="password"
+          class="input-field"
+          [ngClass]="{ 'ng-invalid': email.invalid, 'ng-dirty': email.dirty || email.touched }"
+        />
+
+        @if(password.invalid && password.dirty || password.touched) { @if(
+        password.errors?.['required'] ) {
+        <span class="validation-message">Password is required</span>
+        } @else if (password.errors?.['password']) {
+        <span class="validation-message">Password should be valid</span>
+        } }
+      </div>
+
+      <p-button type="submit" [disabled]="!loginForm.valid">
+        <p>Login</p>
+      </p-button>
+    </div>
+  </form>
+
+  <div class="flex-container">
+    <p class="register-redirect">
+      Don't have an account?
+      <p-button label="Register" [link]="true" (onClick)="handleToRegister()" />
+    </p>
+  </div>
+</p-card>

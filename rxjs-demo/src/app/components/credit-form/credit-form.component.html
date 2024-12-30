@@ -1,0 +1,67 @@
+<p-card header="Credit">
+  <form name="credit-form" autoComplete="off" [formGroup]="creditForm" (ngSubmit)="handleSubmit()">
+    <div class="flex-container">
+      <div class="input-container">
+        <label for="amount">Amount (min: 100)</label>
+        <p-inputnumber
+          id="amount"
+          inputId="integeronly"
+          formControlName="amount"
+          class="input-field"
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="receiveMethod">Receive Method</label>
+        <p-select
+          id="receiveMethod"
+          formControlName="selectedReceiveMethod"
+          [options]="receiveMethods"
+          optionLabel="name"
+          placeholder="Select a Receive Method"
+          class="input-field"
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="pricingPlan">Pricing Plan</label>
+        <p-select
+          id="pricingPlan"
+          formControlName="selectedPricingPlan"
+          [options]="pricingPlans"
+          optionLabel="name"
+          placeholder="Select a Pricing Plan"
+          class="input-field"
+        />
+      </div>
+
+      <div class="input-container">
+        <label for="filesUpload">Choose files for upload</label>
+        <div class="file-upload-container">
+          <p-fileUpload
+            #fileUpload
+            id="filesUpload"
+            name="uploaded-files"
+            accept=".pdf, .jpg, .jpeg, .png"
+            [showUploadButton]="true"
+            (onSelect)="onFileUpload($event)"
+            (onRemove)="onFileRemove($event)"
+            class="w-full"
+            chooseLabel="Choose"
+            [auto]="true"
+            [multiple]="true"
+            required
+          >
+            <ng-template #empty>
+              <div>Drag and drop files to here to upload.</div>
+            </ng-template>
+          </p-fileUpload>
+        </div>
+      </div>
+
+      <p-button type="submit" [disabled]="!creditForm.valid">
+        <p>Submit</p>
+      </p-button>
+    </div>
+  </form>
+</p-card>

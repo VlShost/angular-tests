@@ -1,0 +1,620 @@
+{
+  "users": [
+    {
+      "id": "c9db",
+      "email": "asd@asd",
+      "password": "asd"
+    },
+    {
+      "id": "366f",
+      "email": "asd@asdd",
+      "password": "asd"
+    }
+  ],
+  "credits": [
+    {
+      "id": "a85e",
+      "userId": "12345",
+      "userEmail": "user@example.com",
+      "amount": 5000,
+      "selectedReceiveMethod": {
+        "id": "method1",
+        "name": "Bank Transfer"
+      },
+      "selectedPricingPlan": {
+        "id": "plan1",
+        "name": "Standard"
+      },
+      "filesUpload": [
+        {
+          "name": "document.pdf",
+          "size": 123456,
+          "type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "id": "db76",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 465436,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Half",
+        "time": "6 months",
+        "id": "6b95"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Ubuntu Server CLI cheat sheet 2024 v6.pdf",
+          "size": 189211,
+          "type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "id": "2327",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 4653564365,
+      "selectedReceiveMethod": {
+        "name": "MasterCard",
+        "id": "36fc"
+      },
+      "selectedPricingPlan": {
+        "name": "Half",
+        "time": "6 months",
+        "id": "6b95"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "44c6",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 3252532,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Half",
+        "time": "6 months",
+        "id": "6b95"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Ubuntu Server CLI cheat sheet 2024 v6.pdf",
+          "size": 189211,
+          "type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "id": "92a4",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 2134314,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Year",
+        "time": "12 months",
+        "id": "3f1a"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Ubuntu Server CLI cheat sheet 2024 v6.pdf",
+          "size": 189211,
+          "type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "id": "d9e0",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 436354,
+      "selectedReceiveMethod": {
+        "name": "MasterCard",
+        "id": "36fc"
+      },
+      "selectedPricingPlan": {
+        "name": "Half",
+        "time": "6 months",
+        "id": "6b95"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "97f9",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 24112,
+      "selectedReceiveMethod": {
+        "name": "Paypal",
+        "id": "163e"
+      },
+      "selectedPricingPlan": {
+        "name": "Half",
+        "time": "6 months",
+        "id": "6b95"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "5f21",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 2134,
+      "selectedReceiveMethod": {
+        "name": "Paypal",
+        "id": "163e"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "d1e9",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 3254235,
+      "selectedReceiveMethod": {
+        "name": "MasterCard",
+        "id": "36fc"
+      },
+      "selectedPricingPlan": {
+        "name": "Half",
+        "time": "6 months",
+        "id": "6b95"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "b9e6",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 53443,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "cf1f",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 35253,
+      "selectedReceiveMethod": {
+        "name": "MasterCard",
+        "id": "36fc"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Ubuntu Server CLI cheat sheet 2024 v6.pdf",
+          "size": 189211,
+          "type": "application/pdf"
+        }
+      ]
+    },
+    {
+      "id": "fa45",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 325235,
+      "selectedReceiveMethod": {
+        "name": "MasterCard",
+        "id": "36fc"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "bf3f",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "MasterCard",
+        "id": "36fc"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "93d6",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Half",
+        "time": "6 months",
+        "id": "6b95"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "192b",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "MasterCard",
+        "id": "36fc"
+      },
+      "selectedPricingPlan": {
+        "name": "Year",
+        "time": "12 months",
+        "id": "3f1a"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "aa77",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "1ef7",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "bda1",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "c5ab",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "8430",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "11c7",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "7390",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "4e89",
+      "userId": "c9db",
+      "userEmail": "asd@asd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "ff37",
+      "userId": "366f",
+      "userEmail": "asd@asdd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "MasterCard",
+        "id": "36fc"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    },
+    {
+      "id": "f384",
+      "userId": "366f",
+      "userEmail": "asd@asdd",
+      "amount": 100,
+      "selectedReceiveMethod": {
+        "name": "Visa",
+        "id": "2553"
+      },
+      "selectedPricingPlan": {
+        "name": "Swift",
+        "time": "1 month",
+        "id": "63dd"
+      },
+      "filesUpload": [
+        {
+          "name": "Untitled.jpg",
+          "size": 36243,
+          "type": "image/jpeg"
+        }
+      ]
+    }
+  ],
+  "receive-methods": [
+    {
+      "name": "Visa",
+      "id": "2553"
+    },
+    {
+      "name": "MasterCard",
+      "id": "36fc"
+    },
+    {
+      "name": "Paypal",
+      "id": "163e"
+    },
+    {
+      "name": "Cash",
+      "id": "5bbb"
+    }
+  ],
+  "pricing-plans": [
+    {
+      "name": "Swift",
+      "time": "1 month",
+      "id": "63dd"
+    },
+    {
+      "name": "Half",
+      "time": "6 months",
+      "id": "6b95"
+    },
+    {
+      "name": "Year",
+      "time": "12 months",
+      "id": "3f1a"
+    }
+  ]
+}
