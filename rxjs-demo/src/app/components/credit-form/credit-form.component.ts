@@ -12,7 +12,6 @@ import { FileToUpload } from '../../interfaces/file-to-upload';
 import { CardModule } from 'primeng/card';
 import { ButtonModule } from 'primeng/button';
 import { FileUploadModule } from 'primeng/fileupload';
-import { ChipModule } from 'primeng/chip';
 import { SelectModule } from 'primeng/select';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { MessageService } from 'primeng/api';
@@ -26,7 +25,6 @@ import { MessageService } from 'primeng/api';
     ButtonModule,
     SelectModule,
     InputNumberModule,
-    ChipModule,
   ],
   templateUrl: './credit-form.component.html',
   styleUrl: './credit-form.component.css',
