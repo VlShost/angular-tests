@@ -116,7 +116,7 @@ export class CreditFormComponent implements OnInit {
       this.creditingService.registerNewCredit(creditData as Credit).subscribe({
         next: (response) => {
           this.uploadedFiles = [];
-          this.creditForm.reset(); // Сбрасываем всю форму
+          this.creditForm.reset();
           this.creditForm.patchValue({ filesUpload: this.uploadedFiles });
           if (this.fileUpload) {
             this.fileUpload.clear();

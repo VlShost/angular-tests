@@ -59,8 +59,8 @@ export class RegisterFormComponent {
     const userData = { ...this.registerForm.value };
     delete userData.passwordConfirm;
 
-    this.authService.registerNewUser(userData as User).subscribe(
-      (response) => {
+    this.authService.registerNewUser(userData as User).subscribe({
+      next: (response) => {
         this.messageService.add({
           severity: 'success',
           summary: 'Success',
@@ -69,15 +69,15 @@ export class RegisterFormComponent {
         });
         this.handleToLogin();
       },
-      (error) => {
+      error: (error) => {
         this.messageService.add({
           severity: 'error',
           summary: 'Error',
           detail: 'Register failed',
           life: 3000,
         });
-      }
-    );
+      },
+    });
   }
 
   handleToLogin() {

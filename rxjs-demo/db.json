@@ -34,6 +34,12 @@
       "id": "3f1a"
     }
   ],
-  "users": [],
+  "users": [
+    {
+      "id": "3e7e",
+      "email": "asd@asd",
+      "password": "asd"
+    }
+  ],
   "credits": []
 }

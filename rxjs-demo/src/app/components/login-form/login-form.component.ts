@@ -39,8 +39,8 @@ export class LoginFormComponent {
   handleSubmit() {
     const { email, password } = this.loginForm.value;
 
-    this.authService.getUserByEmail(email as string).subscribe(
-      (response) => {
+    this.authService.getUserByEmail(email as string).subscribe({
+      next: (response) => {
         if (response.length > 0 && response[0].password === password) {
           const user = {
             id: response[0].id,
@@ -57,15 +57,15 @@ export class LoginFormComponent {
           });
         }
       },
-      (error) => {
+      error: (error) => {
         this.messageService.add({
           severity: 'error',
           summary: 'Error',
           detail: 'Login failed',
           life: 3000,
         });
-      }
-    );
+      },
+    });
   }
 
   handleToRegister() {
